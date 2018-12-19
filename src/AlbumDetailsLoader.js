@@ -30,3 +30,5 @@ class AlbumDetailsLoader extends React.Component {
     );
   }
 }
+
+export default AlbumDetailsLoader;
