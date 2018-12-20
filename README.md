@@ -2,6 +2,16 @@
 
 * Run `amplify push` to create s3 buckets
 
+### Notes
+
+Sharp requires native extensions. To get sharp to install from NPM in a way that's compatible with the Amazon Linux environment that AWS runs `Node.js` on, we can use this command:
+
+```shell
+docker run -v "$PWD":/var/task lambci/lambda:build-nodejs8.10 npm install
+```
+
+-------------------------------------------------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
